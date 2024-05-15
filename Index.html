@@ -146,3 +146,54 @@
    <a target="_blank" rel="noopener" href="proplayereli.github.io/games/">
     <a id="My singing monsters" class="link" href="./play/My-Singing-Monsters-main/" target="_blank"><span class="bar"></span><img src="./icons/prox.jpg"><b>Bypasser (web proxy)</b></a>
     <a id="1v1 lol" class="link two" href="./play/1v1-lol-master/" target="_blank"><span class="bar"></span><img src="./icons/ninjacut.jpg"><b>Ninja Cut</b></a>
+     <p class="game_title">Have any ways to improve?<a class="epci" href="Contact. https://discord.gg/9eVjUNC6">discord server</a> Or email us at proplayereli88@gmail.com in our <a class="epci" href="https://discord.gg/9eVjUNC6">discord server</a> we also have many more links! So join in case this one gets blocked by your school! This was made by Eli Vaughan.</p>
+  </div>
+
+  <script>
+    function search_it() {
+      var tag = document.getElementById("tags").value;
+      var what_search = document.getElementById("search").value;
+      var game_list = document.querySelectorAll(".link");
+      var good_games = document.querySelectorAll(".glink");
+
+      if (what_search === "" && tag == "all") {
+        for (var i = 0; i < game_list.length; i++) {
+          document.getElementById(game_list[i].id).style.display = "flex";
+        }
+        for (var i = 0; i < good_games.length; i++) {
+          document.getElementById(good_games[i].id).style.display = "flex";
+        }
+      } else {
+        var active_list = document.querySelectorAll(".active");
+        for (var i = 0; i < active_list.length; i++) {
+          document.getElementById(active_list[i].id).classList.remove("active");
+        }
+        for (var i = 0; i < game_list.length; i++) {
+          var item = game_list[i].id.toLowerCase();
+          var item2 = document.getElementById(game_list[i].id);
+          if (item.includes(what_search.toLowerCase())) {
+            if (tag == "pop" && item2.classList.contains("pop")) {
+              document.getElementById(game_list[i].id).classList.add("active");
+            } else if (tag == "two" && item2.classList.contains("two")) {
+              document.getElementById(game_list[i].id).classList.add("active");
+            } else if (tag == "stream" && item2.classList.contains("stream")) {
+              document.getElementById(game_list[i].id).classList.add("active");
+            } else if (tag == "bad" && item2.classList.contains("bad")) {
+              document.getElementById(game_list[i].id).classList.add("active");
+            } else if (tag == "all") {
+              document.getElementById(game_list[i].id).classList.add("active");
+            }
+          }
+        }
+      }
+    }
+
+    var search_enter = document.getElementById("search");
+    search_enter.addEventListener("keyup", (event) => {
+      if (event.key === "Enter") {
+        search_it();
+      }
+    });
+  </script>
+</body>
+</html>
