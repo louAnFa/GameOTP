@@ -1,2 +1,1 @@
-# GameOTP
-This is a website for the sole purpose of using it to play games in school, or even at your house if you'd like to. This website is a work in progress and if you go to my website, when the entire project is finsihed. At the top it should say, "Complete Website!" That means that all the updates are done. I will do bugfixes as well though, why whouldn't I? I will try to update the website weekly/monthly. (I have a life too)
+OUT OF PROGRESS
